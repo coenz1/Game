@@ -8,8 +8,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 movement;
     private Animator animator;
-    private float horizontal = 0.0f;
-    private float speed = 0.0f;
 
 
     // Start is called before the first frame update
@@ -22,30 +20,31 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        movement = Vector3.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        horizontal = movement.x >0.01f ? movement.x: movement.x <-0.01f ? 1 : 0;
-        speed = movement.y > 0.01f ? movement.y : movement.y < -0.01f ? 1 : 0;
+        UpdateAnimation();
 
-        if (movement.x < -0.01f)
+    }
+
+    void UpdateAnimation()
+    {
+        if (movement != Vector3.zero)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            MoveCharacter();
+            animator.SetFloat("moveX", movement.x);
+            animator.SetFloat("moveY", movement.y);
+            animator.SetBool("isMove", true);
         }
         else
         {
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            animator.SetBool("isMove", false);
         }
-
-        animator.SetFloat("Horizontal", horizontal);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", speed);
     }
 
 
-
-
-    private void FixedUpdate()
+    void MoveCharacter()
     {
         rb.MovePosition(transform.position + movement * movementSpeed * Time.deltaTime);
     }
