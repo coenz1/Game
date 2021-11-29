@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum PlayerState
 {
     walk, attack
@@ -65,10 +66,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isMove", false);
         }
     }
-
-
     void MoveCharacter()
     {
         rb.MovePosition(transform.position + movement * movementSpeed * Time.deltaTime);
     }
+
+
+
+
+
+
 }

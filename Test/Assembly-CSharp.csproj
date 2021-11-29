@@ -55,11 +55,12 @@
   <ItemGroup>
     <Compile Include="Assets\script\EnemyAI.cs" />
     <Compile Include="Assets\script\PlayerMovement.cs" />
+    <Compile Include="Assets\script\HealthEnemy.cs" />
+    <Compile Include="Assets\script\AttackEnemy.cs" />
     <Compile Include="Assets\script\MainMenu.cs" />
     <Compile Include="Assets\script\SwitchToDungeon.cs" />
     <Compile Include="Assets\script\CameraMovement.cs" />
-    <Compile Include="Assets\script\HealthEnemy.cs" />
-    <Compile Include="Assets\script\AttackEnemy.cs" />
+    <Compile Include="Assets\script\Gems.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

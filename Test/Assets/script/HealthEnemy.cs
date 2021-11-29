@@ -6,6 +6,7 @@ public class HealthEnemy : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    public GameObject deadEffect;
 
     private Animator anim;
 
@@ -32,7 +33,17 @@ public class HealthEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             isDead = true;
+            DeadEffect();
             Destroy(gameObject);
+        }
+    }
+
+    private void DeadEffect()
+    {
+        if(deadEffect != null)
+        {
+            GameObject effect = Instantiate(deadEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 2f);
         }
     }
 

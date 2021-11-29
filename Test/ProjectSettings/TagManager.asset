@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
+  - Gem
   - Knock
+  - Enemy
+  - Heart
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -13,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Enemy
-  - Enemy1
-  - Enemy2
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -44,17 +47,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Player
-    uniqueID: 1888206535
-    locked: 0
-  - name: Key
-    uniqueID: 3157806601
+    uniqueID: 2511461505
     locked: 0
   - name: Enemy
-    uniqueID: 44540657
+    uniqueID: 878219571
     locked: 0
-  - name: Enemy1
-    uniqueID: 1137376689
-    locked: 0
-  - name: Enemy2
-    uniqueID: 436518151
+  - name: Item
+    uniqueID: 338415153
     locked: 0

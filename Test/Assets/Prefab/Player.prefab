@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1846032544681176534
 Transform:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1846032545124326095
 Transform:
   m_ObjectHideFlags: 0
@@ -103,7 +103,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1846032545835449921
 Transform:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -180,13 +180,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.85118216, y: -0.07331127}
-      - {x: 0.71158075, y: 0.46115112}
+    - - {x: 0.96931523, y: -0.07331127}
+      - {x: 0.9005935, y: 0.48229563}
       - {x: 0.39935338, y: 0.68051696}
       - {x: 0.20706803, y: -0.21014187}
       - {x: 0.2109214, y: -0.7291466}
       - {x: 0.4679793, y: -0.88888764}
-      - {x: 0.791315, y: -0.48968965}
+      - {x: 0.93307465, y: -0.53197885}
 --- !u!1 &1846032546213168797
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1888206535
+  m_SortingLayerID: -1783505791
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1870689493932506203, guid: c4c6ff407d11cb947a3e0e3fb62d6af8, type: 3}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  movementSpeed: 10
+  movementSpeed: 100
 --- !u!61 &1846032546213168798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1846032546413973678
 Transform:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
