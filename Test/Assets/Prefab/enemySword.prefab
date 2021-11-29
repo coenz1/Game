@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 3868165182026610710}
   - component: {fileID: 3868165182026610706}
   - component: {fileID: 3868165182026610701}
+  - component: {fileID: -5873187640753741742}
   m_Layer: 0
   m_Name: enemySword
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3188781672564193164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.0429, y: -1.1872, z: 0}
-  m_LocalScale: {x: 0.7715, y: 0.7824, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1503509037
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 1137376689
+  m_SortingLayer: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1380157881938054454, guid: 68a674e95ff9387439911399c4e49f67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.026623726, y: -0.03181222}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8125, y: 1.8125}
+  m_Size: {x: 1.3332758, y: 1.3228986}
   m_EdgeRadius: 0
 --- !u!114 &3868165182026610701
 MonoBehaviour:
@@ -172,3 +173,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   dir: {x: 0, y: 0, z: 0}
+--- !u!114 &-5873187640753741742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188781672564193164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd36f2c285498a842b591c7aa633864d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 2
+  maxHealth: 2

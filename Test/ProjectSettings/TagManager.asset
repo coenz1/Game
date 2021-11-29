@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Knock
   layers:
   - Default
   - TransparentFX
@@ -12,9 +14,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
+  - Enemy
+  - Enemy1
+  - Enemy2
   - 
   - 
   - 
@@ -49,4 +51,10 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 44540657
+    locked: 0
+  - name: Enemy1
+    uniqueID: 1137376689
+    locked: 0
+  - name: Enemy2
+    uniqueID: 436518151
     locked: 0
