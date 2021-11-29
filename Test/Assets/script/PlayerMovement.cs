@@ -11,20 +11,24 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float movementSpeed;
-    public static AudioClip attack_sound;
-    static AudioSource aud_src;
     private Rigidbody2D rb;
     private Vector3 movement;
     private Animator animator;
-    
+	
+	public static AudioClip attack_sound;
+    static AudioSource aud_src;
+
+
     // Start is called before the first frame update
     void Start()
     {
         currentState = PlayerState.walk;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        attack_sound = Resources.Load<AudioClip>("attack");
+		attack_sound = Resources.Load<AudioClip>("attack");
         aud_src = GetComponent<AudioSource>();
+		
+		
     }
 
     // Update is called once per frame
@@ -35,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Fire1") && currentState != PlayerState.attack)
         {
-            aud_src.PlayOneShot(attack_sound);
-            StartCoroutine(Attack());
+			aud_src.PlayOneShot(attack_sound);
+            StartCoroutine(Attack()); 
         }
         else if(currentState == PlayerState.walk)
         {
@@ -45,11 +49,10 @@ public class PlayerMovement : MonoBehaviour
         
 
     }
-   
+
     private IEnumerator Attack()
     {
         animator.SetBool("isAttack", true);
-
         currentState = PlayerState.attack;
         yield return null;
         animator.SetBool("isAttack", false);

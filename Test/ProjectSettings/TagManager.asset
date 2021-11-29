@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Heart
   - Key
+  - HealthPlayer
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -54,4 +56,7 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 338415153
+    locked: 0
+  - name: Door
+    uniqueID: 2396582989
     locked: 0
