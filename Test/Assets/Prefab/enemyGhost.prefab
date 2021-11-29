@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5581249626695773312}
   - component: {fileID: 5581249626695773313}
   - component: {fileID: -4357352617668486052}
+  - component: {fileID: -5479804800729510559}
   m_Layer: 0
   m_Name: enemyGhost
   m_TagString: Enemy
@@ -145,7 +146,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -188,3 +189,17 @@ MonoBehaviour:
   currentHealth: 3
   maxHealth: 3
   deadEffect: {fileID: 5780818778084073444, guid: f3ae2b50651e5c24aba8f8de01b0ad9c, type: 3}
+--- !u!114 &-5479804800729510559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591766698281165674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681bf5511d459064faebdceb62ff51d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTouching: 0
+  damageToGive: 10

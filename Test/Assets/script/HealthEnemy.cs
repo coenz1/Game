@@ -7,8 +7,8 @@ public class HealthEnemy : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     public GameObject deadEffect;
-	public static AudioClip dead_sound;
-    static AudioSource aud_src;
+	//public static AudioClip dead_sound;
+    //static AudioSource aud_src;
 	
 
     private Animator anim;
@@ -21,8 +21,8 @@ public class HealthEnemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         enemySprite = GetComponent<SpriteRenderer>(); 
-		dead_sound = Resources.Load<AudioClip>("dead"); 
-        aud_src = GetComponent<AudioSource>(); 
+		//dead_sound = Resources.Load<AudioClip>("dead"); 
+        //aud_src = GetComponent<AudioSource>(); 
 		
     }
 
@@ -39,7 +39,7 @@ public class HealthEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             isDead = true;
-			aud_src.PlayOneShot(dead_sound); 
+			//aud_src.PlayOneShot(dead_sound); 
             DeadEffect();
             Destroy(gameObject);
         }
